@@ -28,7 +28,7 @@ set ruler
 set showmatch
 "
 "Habilita el identado de izquierda a derecha con espacios
-set sw=3
+"set sw=3
 "
 "Habilita el numero de lineas de forma recursiva
 "set relativenumber
@@ -43,7 +43,7 @@ set noshowmode
 set tabstop=3
 "
 "Inserta espacios en lugar de tabs
-set expandtab
+"set expandtab
 "
 "Indentacion X
 set shiftwidth=3
@@ -63,7 +63,11 @@ set title
 set termguicolors
 "
 "configuration of font
-set guifont=JetBrains\ Mono\ Regular:h11
+set guifont=JetBrainsMonoMedium\ Nerd\ Font\ Medium:h11
+
+" habilitar simbolo de tabs y enter
+set list
+set listchars=tab:→\ ,eol:↲
 
 "[Pluggins]
 "
@@ -71,32 +75,19 @@ call plug#begin('~/.config/nvim/plugged')
 
 "Tema gruvbox
 Plug 'morhetz/gruvbox'
-"Tema jellybeans
-Plug 'nanotech/jellybeans.vim'
-"Tema onedark
-Plug 'joshdick/onedark.vim'
-"Tema oceanic-next
-Plug 'mhartington/oceanic-next'
-"Tema Dracula
-Plug 'dracula/vim',{'as':'dracula'}
 
 "Pluggin que muestra los archivos en arbol
 Plug 'scrooloose/nerdtree'
+
 "Pluggin que complementa nerdtree para moverse entre ventanas
 Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
 "Configuracion de pluggins
-"
+
 colorscheme gruvbox
-"let g:airline_theme= "oceanicnext"
 let g:gruvbox_contrast_dark = "hard"
-
-"let g:dracula_bold = 1
-"let g:airline_theme = "dracula"
-"let g:dracula_colorterm = 1
-
 
 "Deshabilita el nerdtree cuando se abre un archivo desde nerdtree
 let NERDTreeQuitOnOpen=1
