@@ -13,3 +13,12 @@
 
 * xfce4
 	|-> *contains various configuration files for xfce4*
+
+* config
+	|-> *contains various configuration files4*
+
+* grub-theme
+	|-> *contains a theme for the grub*
+
+* polybar
+	|-> *contains various configuration files for polybar*
