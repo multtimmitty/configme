@@ -1,0 +1,12 @@
+# copy or move the dracula directory to
+
+		path: /usr/share/grub/themes
+
+# append the next line in the file grub.
+
+		file: /etc/default/grub
+		line to add: GRUB_THEME="/usr/share/grub/themes/dracula/theme.txt"
+
+# to the end update grub
+
+		command: update-grub2
